@@ -1,3 +1,7 @@
+```bash
+API url http://your-website/api/users
+```
+
 1. To register send POST request
 
 ```bash
