@@ -4,7 +4,8 @@ class APP_CRUD_DB{
     //CONNECTION DATABASE
     public static function conn(){
         //$db = new mysqli("localhost", constant('DATABASE_USER_NAME'), constant('DATABASE_PASS'), constant('DATABASE_NAME'));
-        $db = new mysqli("localhost", "root", "", "login_api");
+        //$db = new mysqli("localhost", "root", "", "login_api");
+        $db = new mysqli("localhost", "id18883972_root", "1234567890mM#", "id18883972_test");
         if($db->connect_error){
             return false;
         }else{

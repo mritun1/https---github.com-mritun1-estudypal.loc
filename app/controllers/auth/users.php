@@ -62,9 +62,11 @@ class APP_AUTH_USERS{
         // 2. match the password with database.
         // 3. set to session and cookies.
         // 4. Redirect
+        
         $message['code'] = "0";
         $email = htmlentities($_POST['email']);
         $data = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+        
         if(APP_CRUD_DB::checkData($data) == true){
             
             $getAll = json_decode(APP_CRUD_DB::getAll($data),true);
@@ -93,12 +95,14 @@ class APP_AUTH_USERS{
                 $message['status'] = "Login success";
             }else{
                 $message['status'] = "Wrong username or password.";
+                
             }
     
         }else{
             $message['status'] = "User not exists";
+            
         }
-        return json_encode($message);
+        echo json_encode($message);
     }
 
     public static function user_log_status(){

@@ -42,4 +42,6 @@ Go to
 1. /api/obj/db.php and change it
 Again, Go to
 2. /app/controllers/crud/crud.php and change it
+Again, Go to
+3. /app/controllers/crud/db.php and change it
 ```

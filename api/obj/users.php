@@ -60,8 +60,8 @@ class USERS{
     
     public static function Access(){
         if(isset($_POST['login']) && $_POST['login'] == 'access'){
-    
-            echo APP_AUTH_USERS::login_users();
+            
+            return APP_AUTH_USERS::login_users();
         
         }
     }
