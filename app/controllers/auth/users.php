@@ -93,6 +93,12 @@ class APP_AUTH_USERS{
                 
                 $message['code'] = 1;
                 $message['status'] = "Login success";
+
+                //SEND SOME USERS DATA
+                $where = "email='".$email."'";
+                $message['fname'] = APP_CRUD_DB::getOne('fname','users',$where);
+                $message['lname'] = APP_CRUD_DB::getOne('lname','users',$where);
+
             }else{
                 $message['status'] = "Wrong username or password.";
                 
