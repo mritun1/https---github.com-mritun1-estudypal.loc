@@ -3,8 +3,9 @@ class DB{
     private $db;
 
     public function __construct(){
-        $this->db = new mysqli("localhost", "id18883972_root", "1234567890mM#", "id18883972_test");
+        //$this->db = new mysqli("localhost", "id18883972_root", "1234567890mM#", "id18883972_test");
         //$this->db = new mysqli("localhost", "root", "", "login_api");
+        $this->db = new mysqli("localhost", "root", "estudyPal@1234", "estudypal");
         if($this->db->connect_error){
             $this->db = false;
         }

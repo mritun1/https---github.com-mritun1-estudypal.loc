@@ -30,17 +30,17 @@ echo '<br/>';
 //    echo "Error creating table: " . $db->db()->error;
 // }
 
-$sql = "CREATE TABLE IF NOT EXISTS users (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    fname VARCHAR(255) NULL,
-    lname VARCHAR(255) NULL,
-    email VARCHAR(255) NULL,
-    password VARCHAR(255) NULL,
-    token VARCHAR(255) NULL
-    )";
-if ($db->db()->query($sql) === TRUE) {
-    echo "Table cars created successfully";
-} else {
-    echo "Error creating table: " . $db->db()->error;
-}
+// $sql = "CREATE TABLE IF NOT EXISTS users (
+//     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//     fname VARCHAR(255) NULL,
+//     lname VARCHAR(255) NULL,
+//     email VARCHAR(255) NULL,
+//     password VARCHAR(255) NULL,
+//     token VARCHAR(255) NULL
+//     )";
+// if ($db->db()->query($sql) === TRUE) {
+//     echo "Table cars created successfully";
+// } else {
+//     echo "Error creating table: " . $db->db()->error;
+// }
 ?>

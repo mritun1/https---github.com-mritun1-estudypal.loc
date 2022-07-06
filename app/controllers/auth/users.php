@@ -96,6 +96,7 @@ class APP_AUTH_USERS{
 
                 //SEND SOME USERS DATA
                 $where = "email='".$email."'";
+                $message['user_id'] = APP_CRUD_DB::getOne('id','users',$where);
                 $message['fname'] = APP_CRUD_DB::getOne('fname','users',$where);
                 $message['lname'] = APP_CRUD_DB::getOne('lname','users',$where);
 
